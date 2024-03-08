@@ -138,7 +138,7 @@ export default function SlickSlider({ data, genre }: SlickSliderProps) {
 
   return (
     <Box sx={{ overflow: "hidden", height: "100%", zIndex: 1 }}>
-      {data.results.length > 0 && (
+      {data && data.results.length > 0 && (
         <>
           <Stack
             spacing={2}

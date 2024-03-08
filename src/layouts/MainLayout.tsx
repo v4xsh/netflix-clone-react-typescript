@@ -27,8 +27,8 @@ export default function MainLayout() {
         <DetailModal />
         <PortalProvider>
           {/* <MainLoadingScreen /> */}
-          <Outlet />
           <VideoPortalContainer />
+          <Outlet />
         </PortalProvider>
       </DetailModalProvider>
       {location.pathname !== `/${MAIN_PATH.watch}` && <Footer />}
